@@ -2,7 +2,7 @@ package fr.eni.tp06;
 
 public class Cercle extends Forme {
 
-    int rayon;
+    private int rayon;
     public Cercle(int rayon) {
         this.rayon = rayon;
     }
@@ -27,8 +27,9 @@ public class Cercle extends Forme {
         return perimetre;
     }
 
+
     @Override
-    public String getText() {
-        return "Cercle de rayon " + rayon;
+    public String toString() {
+        return "Cercle de rayon " + rayon +super.toString();
     }
 }

@@ -2,7 +2,7 @@ package fr.eni.tp06;
 
 public class Carre extends Forme {
 
-    int cote;
+    private int cote;
 
     public Carre(int cote) {
         this.cote = cote;
@@ -21,7 +21,7 @@ public class Carre extends Forme {
     }
 
     @Override
-    public String getText() {
-        return "Carré de coté " + this.cote;
+    public String toString() {
+        return "Carré de coté " + cote + super.toString();
     }
 }

@@ -35,7 +35,7 @@ public class Triangle extends Forme {
 
     @Override
     public double calculerAire() {
-        double s = (longueur + largeur + hyp) / 2;
+        double s = calculerPerimetre() / 2;
         double aire = Math.sqrt(s * (s - longueur) * (s - largeur) * (s - hyp));
         return aire;
     }
@@ -47,9 +47,10 @@ public class Triangle extends Forme {
     }
 
     @Override
-    public String getText() {
-        return "Triangle de côté A=" + longueur + ", B=" + largeur + ", C=" + hyp;
+    public String toString() {
+        return "Triangle de côté A=" + longueur + ", B=" + largeur + ", C=" + hyp + super.toString();
     }
+
 
 
 }

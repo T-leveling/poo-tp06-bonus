@@ -2,8 +2,8 @@ package fr.eni.tp06;
 
 public class Rectangle extends Forme{
 
-    int largeur;
-    int longueur;
+    private int largeur;
+    private int longueur;
 
     public Rectangle(int largeur, int longueur) {
         this.largeur = largeur;
@@ -39,7 +39,9 @@ public class Rectangle extends Forme{
     }
 
     @Override
-    public String getText() {
-        return "Rectangle de longueur=" + longueur +" et largeur=" + largeur;
+    public String toString() {
+        return "Rectangle de longueur=" + longueur +" et largeur=" + largeur + super.toString();
     }
+
+
 }
