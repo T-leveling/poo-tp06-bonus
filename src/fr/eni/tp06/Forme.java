@@ -7,10 +7,9 @@ public abstract class Forme {
 
     public abstract String getText();
     public String toString() {
-
-        return this.getText() +
-                "\nAire = " + calculerAire() +
-                "\nPérimètre = " + calculerPerimetre()
-                + "\n\r";
+        return this.getText() + System.lineSeparator() +
+                "Aire = " + calculerAire() + System.lineSeparator() +
+                "Périmètre = " + calculerPerimetre()
+                + System.lineSeparator();
     }
 }
